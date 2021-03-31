@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<TargetFramework>net48</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="EntityFramework" Version="6.4.4" />
+		<PackageReference Include="NLog" Version="4.7.7" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\FarmerAndPartnersModels\FarmerAndPartnersModels.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="EF\Scripts\" />
+	</ItemGroup>
+
+	<PropertyGroup>
+		<EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
+	</PropertyGroup >
+
+</Project>
